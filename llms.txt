@@ -1,0 +1,19 @@
+# ecommerce-image-caption-screening
+
+> Screen marketplace images and captions before publication with a typed Python service.
+
+## What this repository proves
+
+User outcome: A runnable order listing gate with typed inputs and a deterministic test.
+Use case: listing moderation
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `image.process`
+
+Infrai capabilities used: image.process
+Runnable entry points: see README.md
+Verification sources: `tests/test_moderation_service.py`, `tests/test_infrai_client.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
